@@ -7,7 +7,7 @@ section#index-dev-web .dev-web-box {
   background: url("../img/main/imagen-web.jpg") no-repeat;
   background-size: cover;
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1360px;
   padding: 80px 40px 120px;
 }
 
@@ -36,7 +36,9 @@ section#index-dev-web .dev-web-content-text .separator {
 }
 
 @media screen and (max-width: 1024px) {
-
+  section#index-dev-web .dev-web-box {
+    max-width: 1024px;
+  }
 }
 
 @media screen and (max-width: 700px) {

@@ -6,7 +6,7 @@ section#index-dev-app {
 section#index-dev-app .dev-app-content {
   display: flex;
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1360px;
 }
 
 section#index-dev-app .dev-app-content img {
@@ -41,7 +41,9 @@ section#index-dev-app .dev-app-content .dev-app-content-text p {
 }
 
 @media screen and (max-width: 1024px) {
-
+  section#index-dev-app .dev-app-content {
+    max-width: 1024px;
+  }
 }
 
 @media screen and (max-width: 700px) {

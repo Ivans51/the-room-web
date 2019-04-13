@@ -6,7 +6,7 @@ section#index-visual-effect {
 section#index-visual-effect .visual-effect-content {
   display: flex;
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1360px;
 }
 
 section#index-visual-effect .visual-effect-content img {
@@ -40,7 +40,9 @@ section#index-visual-effect .visual-effect-content .visual-effect-content-text p
 }
 
 @media screen and (max-width: 1024px) {
-
+  section#index-visual-effect .visual-effect-content {
+    max-width: 1024px;
+  }
 }
 
 @media screen and (max-width: 700px) {

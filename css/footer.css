@@ -13,7 +13,7 @@ footer .footer-box-links {
 footer .footer-content-links {
   display: flex;
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1360px;
 }
 
 footer .footer-links-item {
@@ -49,7 +49,7 @@ footer .footer-content-radio {
   align-items: flex-end;
   display: flex;
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1360px;
 }
 
 footer .footer-box-radio .play-pause {
@@ -94,7 +94,7 @@ footer .footer-content {
   display: flex;
   height: 35px;
   justify-content: flex-end;
-  max-width: 1024px;
+  max-width: 1360px;
 }
 
 footer .footer-content {
@@ -115,7 +115,17 @@ footer .footer-content img {
 }
 
 @media screen and (max-width: 1024px) {
+  footer .footer-content-links {
+    max-width: 1024px;
+  }
 
+  footer .footer-content {
+    max-width: 1024px;
+  }
+
+  footer .footer-content-radio {
+    max-width: 1024px;
+  }
 }
 
 @media screen and (max-width: 700px) {
