@@ -6,7 +6,7 @@ section#index-main-head {
 
 section#index-main-head .main-head-box {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1360px;
   padding-bottom: 80px;
 }
 
@@ -30,4 +30,45 @@ section#index-main-head .main-head-content-image img,
 section#index-main-head .main-head-logo img {
   height: 100%;
   padding: 0 40px;
+}
+
+@media screen and (min-width: 1920px) {
+
+}
+
+@media screen and (min-width: 1360px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+  section#index-main-head .main-head-box {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  section#index-main-head .main-head-content-image img {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section#index-main-head .main-head-box {
+    padding-bottom: 60px;
+  }
+
+  section#index-main-head h2 {
+    font-size: 1.8rem;
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  section#index-main-head .main-head-content-image {
+    height: 35px;
+    margin-top: 12%;
+  }
+
+  section#index-main-head .main-head-content-image img {
+    padding: 0 10px;
+  }
 }

@@ -26,3 +26,35 @@ section#index-dev-web .dev-web-content-text .separator {
   margin: 2% auto;
   width: 70%;
 }
+
+@media screen and (min-width: 1920px) {
+
+}
+
+@media screen and (min-width: 1360px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 700px) {
+
+}
+
+@media screen and (max-width: 400px) {
+  section#index-dev-web .dev-web-box {
+    padding: 0;
+  }
+
+  section#index-dev-web .dev-web-content-text {
+    padding: 60px 20px;
+    width: 100%;
+  }
+
+  section#index-dev-web .dev-web-content-text p {
+    font-size: .9rem;
+    padding-top: 20px;
+  }
+}

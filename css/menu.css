@@ -1,0 +1,100 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  overflow: hidden;
+  padding: 2%;
+}
+
+#logo {
+  background-image: url('../img/header/the-room-logo-head.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: left;
+  height: 40px; /* your logo here! */
+  max-width: 280px;
+  width: calc(100% - 50px);
+}
+
+nav {
+  float: right;
+  padding-top: 10px;
+}
+
+.navitem {
+  color: #999;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.navitem:first-child {
+  margin-left: 0px;
+}
+
+.navitem:hover {
+  color: white;
+}
+
+#smartbutton {
+  border: 1px solid #999;
+  border-radius: 6px;
+  cursor: pointer;
+  display: none;
+  float: right;
+  height: 15px;
+  margin-top: 5px;
+  padding: 7px;
+  width: 20px;
+}
+
+.buttonline {
+  background-color: #999;
+  height: 3px;
+  margin-top: 4px;
+}
+
+.buttonline:first-child {
+  margin-top: 0px;
+}
+
+/* standard menu */
+@media only screen and (min-width: 551px) {
+  #smartbutton {
+    display: none;
+  }
+
+  nav {
+    display: inline-block !important;
+  }
+}
+
+/* smart menu */
+@media only screen and (max-width: 550px) {
+  #smartbutton {
+    display: inline-block;
+  }
+
+  nav {
+    display: none;
+    position: relative;
+    top: 5px;
+    width: 100%;
+  }
+
+  .navitem {
+    border-top: 1px solid #999;
+    display: block;
+    margin: 0px;
+  }
+
+  .navitem:hover {
+    background-color: #333;
+  }
+}

@@ -122,3 +122,25 @@ h1, h2, h3, h4, h5, h6 {
 .text-title.border-bottom {
   border-bottom: 1px solid white;
 }
+
+@media screen and (min-width: 1920px) {
+
+}
+
+@media screen and (min-width: 1360px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 700px) {
+
+}
+
+@media screen and (max-width: 400px) {
+  .text-title {
+    font-size: 1.4rem;
+  }
+}

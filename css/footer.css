@@ -77,7 +77,7 @@ footer .footer-box-radio button {
   width: 18px;
 }
 
-footer .footer-box-radio span:first-child {
+footer .footer-box-radio span {
   font-weight: 500;
 }
 
@@ -97,7 +97,49 @@ footer .footer-content {
   max-width: 1024px;
 }
 
+footer .footer-content {
+  font-size: .9rem;
+}
+
 footer .footer-content img {
   height: 100%;
   margin-left: 1%;
+}
+
+@media screen and (min-width: 1920px) {
+
+}
+
+@media screen and (min-width: 1360px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 700px) {
+
+}
+
+@media screen and (max-width: 400px) {
+  footer .footer-box-links {
+    padding-top: 10px;
+  }
+
+  footer .footer-content-links {
+    flex-direction: column;
+  }
+
+  footer .footer-links-item {
+    margin-top: 10%;
+  }
+
+  footer .footer-content {
+    height: 30px;
+  }
+
+  footer .footer-content span {
+    font-size: .8rem;
+  }
 }
