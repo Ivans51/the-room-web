@@ -8,11 +8,11 @@ section#index-dev-web .dev-web-box {
   background-size: cover;
   margin: 0 auto;
   max-width: 1360px;
-  padding: 80px 40px 120px;
+  padding: 80px 40px 140px;
 }
 
 section#index-dev-web .dev-web-content-text {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   margin: 0 auto;
   padding: 20px 80px;

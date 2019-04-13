@@ -11,7 +11,7 @@ section#index-edit-video .edit-video-box {
 }
 
 section#index-edit-video .edit-video-content-text {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
   margin-left: 10%;
   padding: 80px 20px;
@@ -19,15 +19,27 @@ section#index-edit-video .edit-video-content-text {
   width: 40%;
 }
 
+section#index-edit-video .edit-video-content-text p {
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 1360px) {
+  section#index-edit-video .edit-video-content-text {
+    margin-left: 25%;
+    width: 25%;
+  }
+}
+
 @media screen and (min-width: 1920px) {
 
 }
 
-@media screen and (min-width: 1360px) {
-
-}
-
 @media screen and (max-width: 1024px) {
+  section#index-edit-video .edit-video-content-text {
+    margin-left: 5%;
+    width: 45%;
+  }
+
   section#index-edit-video .edit-video-box {
     max-width: 1024px;
   }

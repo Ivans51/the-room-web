@@ -9,21 +9,25 @@ section#index-visual-effect .visual-effect-content {
   max-width: 1360px;
 }
 
-section#index-visual-effect .visual-effect-content img {
-  flex: 1;
-  height: 100%;
+section#index-visual-effect .visual-effect-image {
+  overflow: hidden;
   width: 60%;
 }
 
+section#index-visual-effect .visual-effect-content img {
+  height: 100%;
+  width: 100%;
+}
+
 section#index-visual-effect .visual-effect-content h2 {
-  margin: 0 10px;
+  display: inline;
 }
 
 section#index-visual-effect .visual-effect-content .visual-effect-content-text {
   background-color: #0b0022;
   color: white;
   flex: 1;
-  padding: 60px 40px 80px 5px;
+  padding: 60px 80px 80px 10px;
   width: 40%;
 }
 
@@ -31,8 +35,11 @@ section#index-visual-effect .visual-effect-content .visual-effect-content-text p
   padding-top: 20px;
   text-align: right;
 }
-@media screen and (min-width: 1920px) {
 
+@media screen and (min-width: 1920px) {
+  section#index-visual-effect .visual-effect-content .visual-effect-content-text {
+    padding: 100px 160px 80px 10px;
+  }
 }
 
 @media screen and (min-width: 1360px) {
