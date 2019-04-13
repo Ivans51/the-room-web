@@ -1,0 +1,33 @@
+/* Effect visual */
+section#index-visual-effect {
+  width: 100%;
+}
+
+section#index-visual-effect .visual-effect-content {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+section#index-visual-effect .visual-effect-content img {
+  flex: 1;
+  height: 100%;
+  width: 60%;
+}
+
+section#index-visual-effect .visual-effect-content h2 {
+  margin: 0 10px;
+}
+
+section#index-visual-effect .visual-effect-content .visual-effect-content-text {
+  background-color: #0b0022;
+  color: white;
+  flex: 1;
+  padding: 60px 40px 80px 5px;
+  width: 40%;
+}
+
+section#index-visual-effect .visual-effect-content .visual-effect-content-text p {
+  padding-top: 20px;
+  text-align: right;
+}

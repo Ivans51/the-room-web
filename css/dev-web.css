@@ -1,0 +1,28 @@
+/* Develop Web */
+section#index-dev-web {
+  width: 100%;
+}
+
+section#index-dev-web .dev-web-box {
+  background: url("../img/main/imagen-web.jpg") no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 80px 40px 120px;
+}
+
+section#index-dev-web .dev-web-content-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 0 auto;
+  padding: 20px 80px;
+  text-align: center;
+  width: 75%;
+}
+
+section#index-dev-web .dev-web-content-text .separator {
+  background-color: #fff;
+  height: 1px;
+  margin: 2% auto;
+  width: 70%;
+}

@@ -1,0 +1,33 @@
+/* Main head */
+section#index-main-head {
+  background-color: #0b0022;
+  width: 100%;
+}
+
+section#index-main-head .main-head-box {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding-bottom: 80px;
+}
+
+section#index-main-head h2 {
+  background-color: #f9e352;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: normal;
+  padding: 40px 5px 5px;
+}
+
+section#index-main-head .main-head-content-image {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+section#index-main-head .main-head-content-image img,
+section#index-main-head .main-head-logo img {
+  height: 100%;
+  padding: 0 40px;
+}

@@ -1,0 +1,20 @@
+/* Edit video */
+section#index-edit-video {
+  width: 100%;
+}
+
+section#index-edit-video .edit-video-box {
+  background: url("../img/main/imagen-video.jpg") no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+section#index-edit-video .edit-video-content-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin-left: 10%;
+  padding: 80px 20px;
+  text-align: center;
+  width: 40%;
+}

@@ -1,0 +1,33 @@
+/* Development Apps */
+section#index-dev-app {
+  width: 100%;
+}
+
+section#index-dev-app .dev-app-content {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+section#index-dev-app .dev-app-content img {
+  flex: 1;
+  height: 100%;
+  width: 60%;
+}
+
+section#index-dev-app .dev-app-content h2 {
+  margin: 0 10px;
+}
+
+section#index-dev-app .dev-app-content .dev-app-content-text {
+  background-color: #0b0022;
+  color: white;
+  flex: 1;
+  padding: 60px 40px 80px 5px;
+  width: 40%;
+}
+
+section#index-dev-app .dev-app-content .dev-app-content-text p {
+  padding-top: 20px;
+  text-align: right;
+}

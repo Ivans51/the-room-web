@@ -1,4 +1,8 @@
 @import "reset.css";
 @import "header.css";
-@import "main.css";
+@import "main-head.css";
+@import "dev-web.css";
+@import "dev-apps.css";
+@import "edit-video.css";
+@import "visual-effect.css";
 @import "footer.css";
