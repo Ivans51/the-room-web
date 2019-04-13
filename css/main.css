@@ -1,0 +1,151 @@
+/* Main head */
+section#index-main-head {
+  background-color: #0b0022;
+  width: 100%;
+}
+
+section#index-main-head .main-head-box {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding-bottom: 80px;
+}
+
+section#index-main-head h2 {
+  background-color: #f9e352;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: normal;
+  padding: 40px 5px 5px;
+}
+
+section#index-main-head .main-head-content-image {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+section#index-main-head .main-head-content-image img,
+section#index-main-head .main-head-logo img {
+  height: 100%;
+  padding: 0 40px;
+}
+
+/* Develop Web */
+section#index-dev-web {
+  width: 100%;
+}
+
+section#index-dev-web .dev-web-box {
+  background: url("../img/main/imagen-web.jpg") no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 80px 40px 120px;
+}
+
+section#index-dev-web .dev-web-content-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 0 auto;
+  padding: 20px 80px;
+  text-align: center;
+  width: 75%;
+}
+
+section#index-dev-web .dev-web-content-text .separator {
+  background-color: #fff;
+  height: 1px;
+  margin: 2% auto;
+  width: 70%;
+}
+
+/* Development Apps */
+section#index-dev-app {
+  width: 100%;
+}
+
+section#index-dev-app .dev-app-content {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+section#index-dev-app .dev-app-content img {
+  flex: 1;
+  height: 100%;
+  width: 60%;
+}
+
+section#index-dev-app .dev-app-content h2 {
+  margin: 0 10px;
+}
+
+section#index-dev-app .dev-app-content .dev-app-content-text {
+  background-color: #0b0022;
+  color: white;
+  flex: 1;
+  padding: 60px 40px 80px 5px;
+  width: 40%;
+}
+
+section#index-dev-app .dev-app-content .dev-app-content-text p {
+  padding-top: 20px;
+  text-align: right;
+}
+
+/* Edit video */
+section#index-edit-video {
+  width: 100%;
+}
+
+section#index-edit-video .edit-video-box {
+  background: url("../img/main/imagen-video.jpg") no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+section#index-edit-video .edit-video-content-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin-left: 10%;
+  padding: 80px 20px;
+  text-align: center;
+  width: 40%;
+}
+
+/* Effect visual */
+section#index-visual-effect {
+  width: 100%;
+}
+
+section#index-visual-effect .visual-effect-content {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+section#index-visual-effect .visual-effect-content img {
+  flex: 1;
+  height: 100%;
+  width: 60%;
+}
+
+section#index-visual-effect .visual-effect-content h2 {
+  margin: 0 10px;
+}
+
+section#index-visual-effect .visual-effect-content .visual-effect-content-text {
+  background-color: #0b0022;
+  color: white;
+  flex: 1;
+  padding: 60px 40px 80px 5px;
+  width: 40%;
+}
+
+section#index-visual-effect .visual-effect-content .visual-effect-content-text p {
+  padding-top: 20px;
+  text-align: right;
+}

@@ -1,0 +1,103 @@
+footer {
+  font-size: .9rem;
+  width: 100%;
+}
+
+/* contacts - social networks */
+footer .footer-box-links {
+  background-color: #0d0d0d;
+  padding: 40px 20px 60px;
+  width: 100%;
+}
+
+footer .footer-content-links {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+footer .footer-links-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3%;
+}
+
+footer .footer-links-item span {
+  margin-bottom: 5%;
+}
+
+footer .footer-links-item a, footer .footer-links-item span {
+  color: white;
+  line-height: 1.4rem;
+}
+
+footer .footer-links-item .footer-link-omaima {
+  height: 50px;
+}
+
+footer .footer-links-item .footer-link-omaima img {
+  height: 100%;
+}
+
+/* Radio */
+footer .footer-box-radio {
+  background-color: #f9e352;
+  padding: 10px;
+}
+
+footer .footer-content-radio {
+  align-items: flex-end;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+footer .footer-box-radio .play-pause {
+  background: url("../img/footer/icon-play.png") no-repeat center;
+  background-size: contain;
+}
+
+footer .footer-box-radio .volume {
+  background: url("../img/footer/icon-volume.png") no-repeat center;
+  background-size: contain;
+}
+
+footer .footer-box-radio .note-music {
+  background: url("../img/footer/icon-music.png") no-repeat center;
+  background-size: contain;
+}
+
+footer .footer-box-radio button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  height: 18px;
+  margin: 0 5px;
+  outline: none;
+  width: 18px;
+}
+
+footer .footer-box-radio span:first-child {
+  font-weight: 500;
+}
+
+/* Content */
+footer .footer-box {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+footer .footer-content {
+  align-items: flex-end;
+  display: flex;
+  height: 35px;
+  justify-content: flex-end;
+  max-width: 1024px;
+}
+
+footer .footer-content img {
+  height: 100%;
+  margin-left: 1%;
+}

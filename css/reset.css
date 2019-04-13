@@ -111,3 +111,14 @@ h1, h2, h3, h4, h5, h6 {
 .ml-5 {
   margin-left: 5%;
 }
+
+/* Other */
+.text-title {
+  color: white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.text-title.border-bottom {
+  border-bottom: 1px solid white;
+}

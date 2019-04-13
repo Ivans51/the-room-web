@@ -1,0 +1,26 @@
+/* Header */
+header {
+  background-color: black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  width: 100%;
+}
+
+header .header-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+header nav a {
+  color: white;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+header nav a:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
