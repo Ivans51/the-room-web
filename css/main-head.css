@@ -13,20 +13,37 @@ section#index-main-head .main-head-box {
 section#index-main-head h2 {
   background-color: #f9e352;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: normal;
   padding: 40px 5px 5px;
 }
 
-section#index-main-head .main-head-content-image {
+section#index-main-head .main-head-content-image, section#index-main-head .main-head-logo {
   align-items: center;
+  color: white;
   display: flex;
-  height: 50px;
+  height: 40px;
   justify-content: center;
   margin-top: 8%;
 }
 
-section#index-main-head .main-head-content-image img,
+section#index-main-head .main-head-content-image div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 4%;
+}
+
+section#index-main-head .main-head-content-image div span {
+  padding-top: 30px;
+  text-align: center;
+}
+
+section#index-main-head .main-head-content-image div, section#index-main-head .main-head-content-image div img {
+  height: 100%;
+}
+
 section#index-main-head .main-head-logo img {
   height: 100%;
   padding: 0 40px;
@@ -47,8 +64,16 @@ section#index-main-head .main-head-logo img {
 }
 
 @media screen and (max-width: 700px) {
+  section#index-main-head .main-head-content-image div {
+    margin: 0 2%;
+  }
+
   section#index-main-head .main-head-content-image img {
     padding: 0 20px;
+  }
+
+  section#index-main-head .main-head-content-image div span {
+    padding-top: 15px;
   }
 }
 
@@ -64,11 +89,27 @@ section#index-main-head .main-head-logo img {
   }
 
   section#index-main-head .main-head-content-image {
-    height: 35px;
-    margin-top: 12%;
+    flex-direction: column;
+    height: auto;
   }
 
   section#index-main-head .main-head-content-image img {
     padding: 0 10px;
+  }
+
+  section#index-main-head .main-head-content-image div {
+    margin-top: 10%;
+  }
+
+  section#index-main-head .main-head-content-image div img {
+    height: 30px;
+  }
+
+  section#index-main-head .main-head-content-image div span {
+    padding-top: 5px;
+  }
+
+  section#index-main-head .main-head-logo {
+    margin-top: 20%;
   }
 }
