@@ -20,6 +20,10 @@ header nav a {
   text-transform: uppercase;
 }
 
+header nav a:hover {
+  color: white;
+}
+
 @media screen and (min-width: 1920px) {
 
 }
