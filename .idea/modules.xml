@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/the-roon-web.iml" filepath="$PROJECT_DIR$/.idea/the-roon-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/the-room-web.iml" filepath="$PROJECT_DIR$/.idea/the-room-web.iml" />
     </modules>
   </component>
 </project>

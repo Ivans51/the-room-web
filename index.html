@@ -3,21 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
   <!-- TODO: Add meta info social networks -->
   <title>The Room</title>
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="js/aos/aos.css">
   <script src="js/jquery.js"></script>
+  <script src="js/aos/aos.js"></script>
+  <script language="javascript" type="text/javascript" src="https://laradiohd.com:2199/system/streaminfo.js"></script>
 </head>
 <body>
 
 <header>
   <div class="header-content">
-    <a id="logo" href="#"></a>
+    <a id="logo" href="http://theroom.com.ve/"></a>
     <nav>
-      <a href="/#">Desarrollo Web</a>
-      <a href="/#">Desarrollo Apps</a>
-      <a href="/#">Visual/Visual Effects</a>
+      <a class="scrollLink" href="https://theroom.com.ve/#index-dev-web" onclick="menuResponsive()">
+        Desarrollo Web
+      </a>
+      <a class="scrollLink" href="https://theroom.com.ve/#index-dev-app" onclick="menuResponsive()">
+        Desarrollo Apps
+      </a>
+      <a class="scrollLink" href="https://theroom.com.ve/#index-edit-video" onclick="menuResponsive()">
+        Visual/Visual Effects
+      </a>
     </nav>
   </div>
 </header>
@@ -51,8 +60,9 @@
     </div>
   </section>
 
+  <!-- TODO: Add image responsive -->
   <!-- Development Web -->
-  <section id="index-dev-web">
+  <section id="index-dev-web" data-aos="fade-up">
     <div class="dev-web-box">
       <div class="dev-web-content-text">
         <h2 class="text-title">Desarrollo web</h2>
@@ -65,7 +75,7 @@
   </section>
 
   <!-- Development App -->
-  <section id="index-dev-app">
+  <section id="index-dev-app" data-aos="fade-up">
     <div class="dev-app-content">
       <div class="dev-app-image">
         <img src="img/main/imagen-apps.jpg" alt="the room background image apps">
@@ -80,7 +90,7 @@
   </section>
 
   <!-- Edition video -->
-  <section id="index-edit-video">
+  <section id="index-edit-video" data-aos="fade-up">
     <div class="edit-video-box">
       <div class="edit-video-content-text">
         <h2 class="text-title">Edición de vídeo</h2>
@@ -94,7 +104,7 @@
   </section>
 
   <!-- Visual Effect -->
-  <section id="index-visual-effect">
+  <section id="index-visual-effect" data-aos="fade-up">
     <div class="visual-effect-content">
       <div class="visual-effect-image">
         <img src="img/main/imagen-vfx.jpg" alt="the room background image apps">
@@ -122,8 +132,8 @@
       <div class="footer-links-item">
         <span>Contáctanos:</span>
         <a href="mailto:contacto@theroom.com.ve">contacto@theroom.com.ve</a>
-        <a href="https://t.me/ivans51" target="_blank">Telegram - Web y Apps</a>
-        <a href="https://t.me/freddyroom" target="_blank">Telegram - Edición y Efectos Visuales</a>
+        <a href="https://t.me/ivans51" target="_blank">t.me/ivans51 - Web y Apps</a>
+        <a href="https://t.me/freddyroom" target="_blank">t.me/freddyroom - Edición y Efectos Visuales</a>
       </div>
       <div class="footer-links-item">
         <span>Trabajamos en colaboración con:</span>
@@ -140,7 +150,12 @@
       <button class="play-pause"></button>
       <button class="volume"></button>
       <button class="note-music"></button>
-      <span>No server found</span>
+      <span class="cc_streaminfo" data-type="song" data-username="theroom">Not serve found</span>
+      <audio id="the-room-radio" controls="" autoplay="" preload="">
+        <source src="http://51.255.123.116:10223/stream"/>
+        <source src=" "/>
+        <a>Download this file.</a>
+      </audio>
     </div>
   </div>
 
@@ -153,6 +168,10 @@
 </footer>
 
 <script src="js/menu.js"></script>
+<script src="js/my-aos.js"></script>
+<script src="js/my-scroll.js"></script>
+<!-- TODO: add radio JS -->
+<script src="js/my-radio.js"></script>
 
 </body>
 </html>

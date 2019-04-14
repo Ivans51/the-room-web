@@ -9,8 +9,8 @@
 }
 
 nav {
+  flex: none;
   float: right;
-  padding-top: 10px;
 }
 
 .navitem {

@@ -81,6 +81,10 @@ footer .footer-box-radio span {
   font-weight: 500;
 }
 
+footer #the-room-radio {
+  display: none;
+}
+
 /* Content */
 footer .footer-box {
   background-color: black;
@@ -143,6 +147,10 @@ footer .footer-content img {
 
   footer .footer-links-item {
     margin-top: 10%;
+  }
+
+  footer .footer-links-item > * {
+    display: block;
   }
 
   footer .footer-content {

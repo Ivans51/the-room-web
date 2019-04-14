@@ -3,7 +3,9 @@ header {
   background-color: black;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding: 10px;
+  position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 header .header-content {
