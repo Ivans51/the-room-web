@@ -1,6 +1,7 @@
 /* Main head */
 section#index-main-head {
   background-color: #0b0022;
+  height: calc(100vh - 61px);
   width: 100%;
 }
 
@@ -24,7 +25,7 @@ section#index-main-head .main-head-content-image, section#index-main-head .main-
   display: flex;
   height: 40px;
   justify-content: center;
-  margin-top: 8%;
+  margin-top: 10%;
 }
 
 section#index-main-head .main-head-content-image div {
@@ -50,7 +51,9 @@ section#index-main-head .main-head-logo img {
 }
 
 @media screen and (min-width: 1920px) {
-
+  section#index-main-head .main-head-content-image, section#index-main-head .main-head-logo {
+    margin-top: 14%;
+  }
 }
 
 @media screen and (min-width: 1360px) {
