@@ -28,7 +28,10 @@ section#index-dev-web .dev-web-content-text .separator {
 }
 
 @media screen and (min-width: 1920px) {
-
+  section#index-dev-web .dev-web-box {
+    background: url("../img/main/imagen-web_srq1mw_c_scale,w_1920.jpg") no-repeat;
+    background-size: cover;
+  }
 }
 
 @media screen and (min-width: 1360px) {
@@ -46,6 +49,11 @@ section#index-dev-web .dev-web-content-text .separator {
 }
 
 @media screen and (max-width: 400px) {
+  section#index-dev-web .dev-web-box {
+    background: url("../img/main/imagen-web_srq1mw_c_scale,w_1265.jpg") no-repeat;
+    background-size: cover;
+  }
+
   section#index-dev-web .dev-web-box {
     padding: 0;
   }

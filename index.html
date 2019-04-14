@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
   <!-- TODO: Add meta info social networks -->
+  <!-- Facebook -->
+  <!-- COMMON TAGS -->
+  <meta charset="utf-8">
+  <title>The Room</title>
+  <!-- Search Engine -->
+  <meta name="description" content="Web, Apps, Edición de vídio y Efectos Visuales">
+  <meta name="image" content="http://theroom.com.ve/img/main/imagen-1.jpg">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="The Room">
+  <meta itemprop="description" content="Web, Apps, Edición de vídio y Efectos Visuales">
+  <meta itemprop="image" content="http://theroom.com.ve/img/main/imagen-1.jpg">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta name="og:title" content="The Room">
+  <meta name="og:description" content="Web, Apps, Edición de vídio y Efectos Visuales">
+  <meta name="og:image" content="http://theroom.com.ve/img/main/imagen-1.jpg">
+  <meta name="og:url" content="http://theroom.com.ve">
+  <meta name="og:site_name" content="The Room">
+  <meta name="og:locale" content="en_ES">
+  <meta name="fb:admins" content="100001836920687">
+  <meta name="fb:app_id" content="279952112893901">
+  <meta name="og:type" content="website">
+
   <title>The Room</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="js/aos/aos.css">
@@ -60,7 +82,6 @@
     </div>
   </section>
 
-  <!-- TODO: Add image responsive -->
   <!-- Development Web -->
   <section id="index-dev-web" data-aos="fade-up">
     <div class="dev-web-box">
@@ -78,7 +99,15 @@
   <section id="index-dev-app" data-aos="fade-up">
     <div class="dev-app-content">
       <div class="dev-app-image">
-        <img src="img/main/imagen-apps.jpg" alt="the room background image apps">
+        <picture>
+          <img
+              sizes="(max-width: 1153px) 100vw, 1153px"
+              srcset="img/main/imagen-apps_wfcttn_c_scale,w_200.jpg 200w,
+              img/main/imagen-apps_wfcttn_c_scale,w_690.jpg 690w,
+              img/main/imagen-apps_wfcttn_c_scale,w_1153.jpg 1153w"
+              src="img/main/imagen-apps_wfcttn_c_scale,w_1153.jpg"
+              alt="the room background image apps">
+        </picture>
       </div>
       <div class="dev-app-content-text">
         <h2 class="text-title border-bottom">Desarrollo de apps</h2>
@@ -107,7 +136,15 @@
   <section id="index-visual-effect" data-aos="fade-up">
     <div class="visual-effect-content">
       <div class="visual-effect-image">
-        <img src="img/main/imagen-vfx.jpg" alt="the room background image apps">
+        <picture>
+          <img
+              sizes="(max-width: 1153px) 100vw, 1153px"
+              srcset="img/main/imagen-vfx_dcnnm7_c_scale,w_200.jpg 200w,
+              img/main/imagen-vfx_dcnnm7_c_scale,w_777.jpg 777w,
+              img/main/imagen-vfx_dcnnm7_c_scale,w_1153.jpg 1153w"
+              src="img/main/imagen-vfx_dcnnm7_c_scale,w_1153.jpg"
+              alt="">
+        </picture>
       </div>
       <div class="visual-effect-content-text">
         <h2 class="text-title border-bottom">Efectos visuales</h2>

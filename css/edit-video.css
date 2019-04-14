@@ -31,7 +31,10 @@ section#index-edit-video .edit-video-content-text p {
 }
 
 @media screen and (min-width: 1920px) {
-
+  section#index-edit-video .edit-video-box {
+    background: url("../img/main/imagen-video_g7ycqx_c_scale,w_1920.jpg") no-repeat;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -46,7 +49,10 @@ section#index-edit-video .edit-video-content-text p {
 }
 
 @media screen and (max-width: 700px) {
-
+  section#index-edit-video .edit-video-box {
+    background: url("../img/main/imagen-video_g7ycqx_c_scale,w_1276.jpg") no-repeat;
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 400px) {

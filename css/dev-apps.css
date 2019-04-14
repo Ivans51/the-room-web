@@ -54,7 +54,7 @@ section#index-dev-app .dev-app-content .dev-app-content-text p {
 
 @media screen and (max-width: 700px) {
   section#index-dev-app .dev-app-content {
-    background: url("../img/main/imagen-apps.jpg") no-repeat;
+    background: url("../img/main/imagen-apps_wfcttn_c_scale,w_690.jpg") no-repeat;
     background-size: cover;
     flex-direction: column;
   }
