@@ -117,7 +117,9 @@ footer .footer-content {
   display: flex;
   height: 35px;
   justify-content: flex-end;
+  margin: 0 auto;
   max-width: 1360px;
+  padding: 0 10px;
 }
 
 footer .footer-content {
