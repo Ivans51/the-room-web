@@ -38,7 +38,7 @@ section#index-dev-app .dev-app-content .dev-app-content-text p {
 
 @media screen and (min-width: 1920px) {
   section#index-dev-app .dev-app-content .dev-app-content-text {
-    padding: 100px 160px 80px 160px;
+    padding: 100px 80px 80px 80px;
   }
 }
 

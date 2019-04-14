@@ -38,7 +38,7 @@ section#index-visual-effect .visual-effect-content .visual-effect-content-text p
 
 @media screen and (min-width: 1920px) {
   section#index-visual-effect .visual-effect-content .visual-effect-content-text {
-    padding: 100px 160px 80px 160px;
+    padding: 100px 80px 80px 80px;
   }
 }
 
