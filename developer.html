@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <!-- Facebook -->
+  <!-- COMMON TAGS -->
+  <meta charset="utf-8">
+  <title>Android and Web Developer</title>
+  <!-- Search Engine -->
+  <meta name="description" content="Android and Web Developer">
+  <meta name="image" content="http://theroom.com.ve/img/main/imagen-1.jpg">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="The Room">
+  <meta itemprop="description" content="Android and Web Developer">
+  <meta itemprop="image" content="http://theroom.com.ve/img/main/imagen-1.jpg">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta name="og:title" content="The Room">
+  <meta name="og:description" content="Android and Web Developer">
+  <meta name="og:image" content="http://theroom.com.ve/img/main/imagen-1.jpg">
+  <meta name="og:url" content="http://theroom.com.ve">
+  <meta name="og:site_name" content="The Room">
+  <meta name="og:locale" content="es_ES">
+  <meta name="fb:admins" content="100001836920687">
+  <meta name="fb:app_id" content="279952112893901">
+  <meta name="og:type" content="website">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/developer.css">
+  <script src="js/vue.js"></script>
+  <script src="js/vue-modal.min.js"></script>
+</head>
+<body>
+
+<div id="developer" class="base-content">
+  <header>
+    <a class="logo" @click.prevent="menu = 'home'">
+      <img src="img/developer/eyes.png" alt="ico developer">
+    </a>
+    <nav>
+      <button class="btn" @click.prevent="menu = 'home'">Home</button>
+      <button class="btn" @click.prevent="menu = 'about'">About</button>
+      <button class="btn" @click.prevent="menu = 'skills'">Skills</button>
+      <button class="btn" @click.prevent="menu = 'works'">My Work</button>
+      <button class="btn" @click.prevent="menu = 'contact'">Contact</button>
+    </nav>
+    <ul class="social-media">
+      <li><a href="/#" target="_blank">Linkedin</a></li>
+      <li><a href="/#" target="_blank">Whatsapp</a></li>
+      <li><a href="/#" target="_blank">Telegram</a></li>
+      <li><a href="/#" target="_blank">Facebook</a></li>
+    </ul>
+  </header>
+
+  <main v-cloak>
+    <div class="content">
+
+      <section id="home" v-if="menu === 'home'">
+        <div>
+          <h1>Hi, <br>I'm Ivans, <br>Android and Web Developer.</h1>
+          <p>Frontend, Backend, API rest...</p>
+          <a @click.prevent="menu = 'contact'">Contact Me</a>
+        </div>
+      </section>
+
+      <section id="about" v-if="menu === 'about'">
+        About
+      </section>
+
+      <section id="skills" v-if="menu === 'skills'">
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+      </section>
+
+      <section id="works" v-if="menu === 'works'">
+        Works
+      </section>
+
+      <section id="contact" v-if="menu === 'contact'">
+        Contact
+      </section>
+      <!--  Project -->
+      <modal height="auto" :scrollable="true" v-cloak name="modal-detail" transition="pop-out">
+        <div>Project</div>
+      </modal>
+    </div>
+    <footer>
+      Footer
+    </footer>
+  </main>
+</div>
+
+<script>
+  Vue.use(window["vue-js-modal"].default)
+  new Vue({
+    el: '#developer',
+    data: {
+      title: 'Android And Web Developer',
+      menu: 'about'
+    },
+    methods: {
+      openProject(id) {
+        console.log(id)
+        this.$modal.show('modal-detail')
+      }
+    }
+  })
+</script>
+</body>
+</html>
