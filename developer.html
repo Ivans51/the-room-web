@@ -26,117 +26,243 @@
   <meta name="fb:app_id" content="279952112893901">
   <meta name="og:type" content="website">
 
+  <link rel="stylesheet" href="js/slick/slick.css">
+  <link rel="stylesheet" href="js/slick/slick-theme.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/developer.css">
+  <script src="js/jquery.js"></script>
   <script src="js/vue.js"></script>
   <script src="js/vue-modal.min.js"></script>
+  <script src="js/sweetalert2.min.js"></script>
+  <script src="js/slick/slick.js"></script>
 </head>
 <body>
 
 <div id="developer" class="base-content">
   <header>
-    <a class="logo" @click.prevent="menu = 'home'">
-      <img src="img/developer/eyes.png" alt="ico developer">
+    <a class="logo">
+      <img src="img/header/the-room-logo-head.png" alt="ico developer">
     </a>
     <nav>
-      <button class="btn" @click.prevent="menu = 'home'">Home</button>
-      <button class="btn" @click.prevent="menu = 'about'">About</button>
-      <button class="btn" @click.prevent="menu = 'skills'">Skills</button>
-      <button class="btn" @click.prevent="menu = 'works'">My Work</button>
-      <button class="btn" @click.prevent="menu = 'contact'">Contact</button>
+      <a class="btn">Home</a>
+      <a class="btn">About</a>
+      <a class="btn">Skills</a>
+      <a class="btn">My Work</a>
+      <a class="btn">Contact</a>
+      <a class="btn" href="/#" target="_blank">Linkedin</a>
+      <a class="btn" href="/#" target="_blank">Whatsapp</a>
+      <a class="btn" href="/#" target="_blank">Telegram</a>
+      <a class="btn" href="/#" target="_blank">Facebook</a>
     </nav>
-    <ul class="social-media">
-      <li><a href="/#" target="_blank">Linkedin</a></li>
-      <li><a href="/#" target="_blank">Whatsapp</a></li>
-      <li><a href="/#" target="_blank">Telegram</a></li>
-      <li><a href="/#" target="_blank">Facebook</a></li>
-    </ul>
   </header>
 
   <main v-cloak>
     <div class="content">
 
-      <section id="home" v-if="menu === 'home'">
-        <div>
-          <h1>Hi, <br>I'm Ivans, <br>Android and Web Developer.</h1>
-          <p>Frontend, Backend, API rest...</p>
-          <a @click.prevent="menu = 'contact'">Contact Me</a>
+      <section id="home">
+        <h1>Web, Desktop and Android Developer</h1>
+        <p>Frontend, Backend, API rest...</p>
+        <img src="img/developer/image_ivans.jpg" alt="image Ivans">
+        <a class="button-contact">Contact Me</a>
+      </section>
+
+      <section id="about">
+        <h1>Hi, I'm Ivan.</h1>
+        <p>I am a person likes to learn and research new topics, write code quickly, recognize my mistakes, adapt to the
+          style of work of a company and a development team. I love learning about new technologies, I'm not afraid to
+          eliminate obsolete and I'm fascinated by videogames and anime.</p>
+      </section>
+
+      <section id="skills">
+        <ul>
+          <li>
+            <img src="img/developer/eyes.png" alt="ico skills">
+            <h3>Frontend</h3>
+            <h4>Languages</h4>
+            <p>HTML</p>
+            <p>CSS - SASS</p>
+            <p>Javascript</p>
+            <h4>Frameworks</h4>
+            <p>Vue</p>
+            <p>Angular</p>
+            <h4>CMS</h4>
+            <p>Wordpress</p>
+            <h4>Libraries</h4>
+            <p>MapBox</p>
+            <p>Firebase</p>
+            <h4>Control Version</h4>
+            <p>Git</p>
+          </li>
+          <li>
+            <img src="img/developer/eyes.png" alt="ico skills">
+            <h3>Backend</h3>
+            <h4>Languages</h4>
+            <p>PHP</p>
+            <p>MySQL</p>
+            <p>MongoDB</p>
+            <h4>Frameworks</h4>
+            <p>Laravel</p>
+            <p>Slim</p>
+            <h4>Control Version</h4>
+            <p>Git</p>
+          </li>
+          <li>
+            <img src="img/developer/eyes.png" alt="ico skills">
+            <h3>Android</h3>
+            <h4>Languages</h4>
+            <p>Java</p>
+            <p>Kotlin</p>
+            <p>Dart</p>
+            <h4>Base data</h4>
+            <p>Sqlite</p>
+            <h4>Frameworks</h4>
+            <p>Flutter</p>
+            <h4>Libraries</h4>
+            <p>Retrofit</p>
+            <p>Google maps</p>
+            <p>Glide</p>
+            <p>Picasso</p>
+            <p>RXJava</p>
+            <h4>Control Version</h4>
+            <p>Git</p>
+          </li>
+          <li>
+            <img src="img/developer/eyes.png" alt="ico skills">
+            <h3>Desktop</h3>
+            <h4>Languages</h4>
+            <p>Java</p>
+            <h4>Control Version</h4>
+            <p>Git</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="works">
+        <h2>My Recent Work</h2>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
+        </div>
+        <div class="divider" @click.prevent="openProject('name')">
+          <img src="img/developer/eyes.png" alt="ico developer">
         </div>
       </section>
 
-      <section id="about" v-if="menu === 'about'">
-        About
-      </section>
-
-      <section id="skills" v-if="menu === 'skills'">
-        <div class="divider" @click.prevent="openProject('name')">
-          <img src="img/developer/eyes.png" alt="ico developer">
-        </div>
-        <div class="divider" @click.prevent="openProject('name')">
-          <img src="img/developer/eyes.png" alt="ico developer">
-        </div>
-        <div class="divider" @click.prevent="openProject('name')">
-          <img src="img/developer/eyes.png" alt="ico developer">
-        </div>
-        <div class="divider" @click.prevent="openProject('name')">
-          <img src="img/developer/eyes.png" alt="ico developer">
-        </div>
-        <div class="divider" @click.prevent="openProject('name')">
-          <img src="img/developer/eyes.png" alt="ico developer">
-        </div>
-        <div class="divider" @click.prevent="openProject('name')">
-          <img src="img/developer/eyes.png" alt="ico developer">
-        </div>
-        <div class="divider" @click.prevent="openProject('name')">
-          <img src="img/developer/eyes.png" alt="ico developer">
-        </div>
-        <div class="divider" @click.prevent="openProject('name')">
-          <img src="img/developer/eyes.png" alt="ico developer">
-        </div>
-        <div class="divider" @click.prevent="openProject('name')">
-          <img src="img/developer/eyes.png" alt="ico developer">
-        </div>
-        <div class="divider" @click.prevent="openProject('name')">
-          <img src="img/developer/eyes.png" alt="ico developer">
-        </div>
-        <div class="divider" @click.prevent="openProject('name')">
-          <img src="img/developer/eyes.png" alt="ico developer">
-        </div>
-        <div class="divider" @click.prevent="openProject('name')">
-          <img src="img/developer/eyes.png" alt="ico developer">
+      <section id="testimony">
+        <h2>Testimonials</h2>
+        <p>People I've worked with have said some nice things...</p>
+        <div class="testimony-slider-slick">
+          <div class="content">
+            <img src="img/developer/eyes.png" alt="testimony image">
+          </div>
+          <div class="content">
+            <img src="img/developer/eyes.png" alt="testimony image">
+          </div>
         </div>
       </section>
 
-      <section id="works" v-if="menu === 'works'">
-        Works
-      </section>
-
-      <section id="contact" v-if="menu === 'contact'">
-        Contact
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions, please don’t hesitate to contact using form below...</p>
+        <form @submit.prevent="sendEmail">
+          <label for="name">
+            <input class="divider mr-1" type="text" id="name" placeholder="Name" v-model="email.name">
+          </label>
+          <label for="email">
+            <input class="divider" type="text" id="email" placeholder="Email" v-model="email.email">
+          </label>
+          <label for="subject">
+            <input type="text" id="subject" placeholder="Subject" v-model="email.subject">
+          </label>
+          <label for="message">
+            <input type="text" id="message" placeholder="Message" v-model="email.message">
+          </label>
+          <div class="content-button">
+            <button class="button-contact" type="submit">Send</button>
+          </div>
+        </form>
       </section>
       <!--  Project -->
       <modal height="auto" :scrollable="true" v-cloak name="modal-detail" transition="pop-out">
         <div>Project</div>
       </modal>
     </div>
-    <footer>
-      Footer
-    </footer>
   </main>
+  <footer>
+    <span>2019, all rights reserved.</span>
+    <img src="img/footer/logo-the-room-footer.png" alt="the room logo footer">
+  </footer>
 </div>
 
+<script src="js/my-slick.js"></script>
 <script>
   Vue.use(window["vue-js-modal"].default)
   new Vue({
     el: '#developer',
     data: {
-      title: 'Android And Web Developer',
-      menu: 'about'
+      email: {
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      }
     },
     methods: {
       openProject(id) {
         console.log(id)
         this.$modal.show('modal-detail')
+      },
+      sendEmail() {
+        jQuery.ajax({
+          url: `/php/send-email.php`,
+          type: 'POST',
+          data: this.email,
+          success: data => {
+            Swal.fire({
+              title: 'Success',
+              text: 'Email send',
+              confirmButtonText: 'Ok'
+            })
+            console.log(data)
+          },
+          error: data => {
+            Swal.fire({
+              title: 'Error',
+              text: 'Sending email',
+              confirmButtonText: 'Ok'
+            })
+            console.log(`Error ${data}`)
+          }
+        })
       }
     }
   })

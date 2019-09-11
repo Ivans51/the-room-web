@@ -1,60 +1,67 @@
-.base-content {
-  display: grid;
-  grid-template-areas: 'top main';
-  grid-template-columns: 60px 1fr;
-  grid-template-rows: 1fr;
-  height: 100vh;
+:root {
+  --room-first: rgb(91, 127, 197);
 }
 
 header {
   background-color: #181818;
   color: white;
-  grid-area: top;
-  position: relative;
-}
-
-header img {
-  padding: 5px;
+  display: flex;
+  height: 50px;
+  position: fixed;
   width: 100%;
 }
 
 header nav {
-  margin-top: -120px;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
   padding: 5px;
-  position: absolute;
-  top: 50%;
+}
+
+header nav a {
+  color: white;
+  font-size: 1rem;
+  transition: all ease .1s;
+}
+
+header nav a:hover {
+  color: var(--room-first);
+  font-size: 1.1rem;
+}
+
+header img {
+  padding: 10px 25px;
   width: 100%;
 }
 
 header a.logo {
-  background-color: ghostwhite;
-  display: block;
-}
-
-header ul {
-  bottom: 10%;
-  position: absolute;
+  width: 150px;
 }
 
 main {
   background-color: white;
-  display: grid;
-  grid-area: main;
-  grid-template-areas: 'content' 'bottom';
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 40px;
-}
-
-.content {
-  grid-area: content;
+  padding-top: 50px;
 }
 
 footer {
+  align-items: center;
   background-color: black;
-  grid-area: bottom;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
 }
 
-button.btn {
+footer p {
+  font-size: .8rem;
+}
+
+footer img {
+  width: 50px;
+  margin-left: 10px;
+}
+
+button.btn, a.btn {
   background: transparent;
   border: none;
   color: white;
@@ -62,17 +69,38 @@ button.btn {
   font-size: .7rem;
   font-weight: bold;
   outline: none;
+  padding: 10px;
   text-align: center;
   text-transform: uppercase;
-  width: 100%;
+}
+
+.button-contact {
+  background-color: transparent;
+  border: 1px solid var(--room-first);
+  border-radius: 3px;
+  color: var(--room-first);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  transition: all ease-in .1s;
+}
+
+.button-contact:hover {
+  background-color: var(--room-first);
+  color: white;
 }
 
 /* Home */
 #home {
   align-items: center;
   display: flex;
+  flex-direction: column;
   height: 100%;
+  justify-content: center;
   padding: 50px;
+  text-align: center;
 }
 
 #home h1 {
@@ -83,40 +111,160 @@ button.btn {
   color: #8d8d8d;
 }
 
-#home a {
-  border: 1px solid #5b7fc5;
-  border-radius: 3px;
-  color: #5b7fc5;
-  display: inline-block;
-  font-weight: bold;
-  margin-top: 40px;
-  padding: 8px 12px;
-  text-transform: uppercase;
+#home img {
+  border-radius: 50%;
+  margin: 40px 0;
+  width: 180px;
 }
 
 /* About */
 #about {
-  align-items: center;
-  display: flex;
+  background-color: var(--room-first);
+  color: white;
   height: 100%;
-  padding: 50px;
+  padding: 100px 150px 200px 150px;
+  text-align: center;
+}
+
+#about h1 {
+  font-size: 2.5rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin: 20px 0;
 }
 
 /* Skills */
 #skills {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(233, 240, 243, 0.5) 0 5px 5px 0, rgb(230, 236, 248) 0 0 0 1px;;
+  margin: -140px 40px 0;
+  text-align: center;
+}
+
+#skills ul {
+  display: flex;
+}
+
+#skills ul li {
+  border-right: 1px solid rgb(230, 236, 248);
+  flex-grow: 1;
+  padding: 60px 35px;
+}
+
+#skills ul li:last-child {
+  border-right: none;
+}
+
+#skills ul li img {
+  width: 50px;
+}
+
+#skills ul li h3 {
+  margin: 20px 0;
+}
+
+#skills ul li h4 {
+  color: var(--room-first);
+  margin: 40px 0 10px;
+}
+
+#skills ul li p {
+  line-height: 1.5rem;
+}
+
+/* Works */
+#works {
   display: block;
   height: 100%;
   margin: 0 auto;
   max-width: 1360px;
+  text-align: center;
 }
 
-#skills .divider {
+#works h2 {
+  margin: 80px 0 40px;
+}
+
+#works .divider {
   align-items: center;
+  background-color: transparent;
+  border: 1px solid #CCC;
+  border-radius: 12px;
   cursor: pointer;
   display: inline-flex;
   height: 33%;
   justify-content: center;
-  width: 24.5%;
+  margin: 1%;
+  transition: all ease .3s;
+  width: 22.5%;
+}
+
+#works .divider:hover {
+  background-color: #CCCCCC;
+}
+
+/* Testimony */
+#testimony {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 50px;
+  text-align: center;
+}
+
+#testimony h2 {
+  margin: 20px 0;
+}
+
+#testimony .testimony-slider-slick .content {
+  align-items: center;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+#testimony .testimony-slider-slick img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+/* Contact */
+#contact {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 50px;
+  text-align: center;
+}
+
+#contact p {
+  margin: 10px 0 40px;
+}
+
+#contact input {
+  background: #dddddd;
+  border: 0;
+  box-sizing: border-box;
+  color: #8d8d8d;
+  font-size: 16px;
+  height: 50px;
+  margin: 10px 0;
+  outline: none;
+  padding: 0 20px;
+  width: 100%;
+}
+
+#contact input.divider {
+  width: 49%;
+}
+
+#contact .content-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
 }
 
 @media screen and (min-width: 1360px) {
@@ -132,9 +280,83 @@ button.btn {
 }
 
 @media screen and (max-width: 700px) {
+  #skills ul {
+    flex-direction: column;
+  }
 
+  #skills ul li {
+    border-bottom: 1px solid rgb(230, 236, 248);
+    border-right: none;
+  }
+
+  #skills ul li:last-child {
+    border-bottom: none;
+  }
+
+  #home {
+    padding: 40px 20px;
+  }
+
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #home img {
+    width: 150px;
+  }
+
+  #about {
+    padding: 20px 20px 100px 20px;
+  }
+
+  #about h2 {
+    font-size: 1.5rem;
+  }
+
+  #about p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  #skills {
+    margin: -80px 20px 0;
+  }
+
+  #skills ul li {
+    padding: 30px 15px;
+  }
+
+  #works h2 {
+    margin: 60px 0 40px;
+  }
+
+  #works .divider {
+    width: 45%;
+  }
+
+  #testimony {
+    padding: 20px 20px;
+  }
+
+  #contact {
+    padding: 20px 20px;
+  }
+
+  #contact input.divider {
+    width: 100%;
+  }
+
+  footer {
+    padding: 5px 10px;
+  }
+
+  footer span {
+    font-size: .8rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
-
+  #works .divider {
+    width: 90%;
+  }
 }
