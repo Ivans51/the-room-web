@@ -30,12 +30,63 @@ header nav a:hover {
 }
 
 header img {
+  height: 100%;
   padding: 10px 25px;
-  width: 100%;
 }
 
 header a.logo {
-  width: 150px;
+  height: 100%;
+}
+
+/* Menu */
+.buttonline:first-child {
+  margin-top: 0;
+}
+
+.buttonline {
+  background-color: #999;
+  height: 3px;
+  margin-top: 4px;
+}
+
+#smartbutton {
+  border: 1px solid #999;
+  border-radius: 6px;
+  cursor: pointer;
+  display: none;
+  height: 32px;
+  margin-right: 20px;
+  padding: 7px;
+  width: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  header nav {
+    background-color: black;
+    display: none;
+    width: 100%;
+  }
+
+  header nav a.btn {
+    border-bottom: 1px solid #060606;
+    display: block;
+  }
+
+  #smartbutton {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  nav {
+    display: flex !important;
+  }
 }
 
 main {
@@ -57,8 +108,8 @@ footer p {
 }
 
 footer img {
-  width: 50px;
   margin-left: 10px;
+  width: 50px;
 }
 
 button.btn, a.btn {
@@ -97,7 +148,7 @@ button.btn, a.btn {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 95vh;
   justify-content: center;
   padding: 50px;
   text-align: center;
@@ -182,11 +233,12 @@ button.btn, a.btn {
   height: 100%;
   margin: 0 auto;
   max-width: 1360px;
+  padding-top: 80px;
   text-align: center;
 }
 
 #works h2 {
-  margin: 80px 0 40px;
+  margin: 0 0 40px;
 }
 
 #works .divider {

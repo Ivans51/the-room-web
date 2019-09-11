@@ -26,6 +26,7 @@
   <meta name="fb:app_id" content="279952112893901">
   <meta name="og:type" content="website">
 
+  <link rel="stylesheet" href="css/sweetalert2.min.css">
   <link rel="stylesheet" href="js/slick/slick.css">
   <link rel="stylesheet" href="js/slick/slick-theme.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -40,15 +41,25 @@
 
 <div id="developer" class="base-content">
   <header>
-    <a class="logo">
+    <a class="logo scrollLink" href="http://theroom/developer#home">
       <img src="img/header/the-room-logo-head.png" alt="ico developer">
     </a>
     <nav>
-      <a class="btn">Home</a>
-      <a class="btn">About</a>
-      <a class="btn">Skills</a>
-      <a class="btn">My Work</a>
-      <a class="btn">Contact</a>
+      <a class="btn scrollLink" href="http://theroom/developer#about" onclick="menuResponsive()">
+        About
+      </a>
+      <a class="btn scrollLink" href="http://theroom/developer#skills" onclick="menuResponsive()">
+        Skills
+      </a>
+      <a class="btn scrollLink" href="http://theroom/developer#works" onclick="menuResponsive()">
+        Works
+      </a>
+      <a class="btn scrollLink" href="http://theroom/developer#testimony" onclick="menuResponsive()">
+        Testimony
+      </a>
+      <a class="btn scrollLink" href="http://theroom/developer#contact" onclick="menuResponsive()">
+        Contact me
+      </a>
       <a class="btn" href="/#" target="_blank">Linkedin</a>
       <a class="btn" href="/#" target="_blank">Whatsapp</a>
       <a class="btn" href="/#" target="_blank">Telegram</a>
@@ -63,7 +74,7 @@
         <h1>Web, Desktop and Android Developer</h1>
         <p>Frontend, Backend, API rest...</p>
         <img src="img/developer/image_ivans.jpg" alt="image Ivans">
-        <a class="button-contact">Contact Me</a>
+        <a class="button-contact scrollLink" href="http://theroom/developer#contact">Contact Me</a>
       </section>
 
       <section id="about">
@@ -223,6 +234,8 @@
   </footer>
 </div>
 
+<script src="js/menu.js"></script>
+<script src="js/my-scroll.js"></script>
 <script src="js/my-slick.js"></script>
 <script>
   Vue.use(window["vue-js-modal"].default)
