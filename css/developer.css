@@ -1,5 +1,6 @@
 :root {
   --room-first: rgb(91, 127, 197);
+  --room-second: rgb(72, 100, 157);
 }
 
 header {
@@ -215,6 +216,8 @@ button.btn, a.btn {
 /* Home */
 #home {
   align-items: center;
+  background: url("../img/developer/backgroud_home.png") no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   height: 95vh;
@@ -225,6 +228,7 @@ button.btn, a.btn {
 
 #home h1 {
   font-size: 3rem;
+  margin-top: -50px;
 }
 
 #home p {
@@ -354,10 +358,22 @@ button.btn, a.btn {
 
 /* Contact */
 #contact {
+  background: url("../img/developer/backgroud_contact.svg") no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+}
+
+#contact .content {
   margin: 0 auto;
   max-width: 600px;
   padding: 50px;
   text-align: center;
+}
+
+#contact .button-contact {
+  border: 1px solid white;
+  color: white;
 }
 
 #contact p {
@@ -365,7 +381,7 @@ button.btn, a.btn {
 }
 
 #contact input {
-  background: #dddddd;
+  background: white;
   border: 0;
   box-sizing: border-box;
   color: #8d8d8d;
@@ -385,6 +401,50 @@ button.btn, a.btn {
   display: flex;
   justify-content: flex-end;
   margin: 20px 0;
+}
+
+/* Modal */
+.modal-main {
+  padding: 20px 40px 50px;
+  position: relative;
+}
+
+.modal-main button {
+  position: absolute;
+  right: 20px;
+}
+
+.modal-main h2 {
+  border-bottom: 1px solid #CCCCCC;
+  padding: 0 0 15px;
+}
+
+.modal-main .modal-content {
+  display: flex;
+  padding-top: 20px;
+}
+
+.modal-main .modal-content .modal-info {
+  padding: 0 20px 10px;
+  width: 50%;
+}
+
+.modal-main .modal-content .modal-info a {
+  color: var(--room-first);
+  display: block;
+}
+
+.modal-main .modal-content .modal-info a:hover {
+  color: var(--room-second);
+}
+
+.modal-main .modal-content .modal-info p, .modal-main .modal-content .modal-info a {
+  margin: 5px 0 10px;
+}
+
+.modal-main .modal-content img {
+  height: 100%;
+  width: 50%;
 }
 
 @media screen and (min-width: 1360px) {
