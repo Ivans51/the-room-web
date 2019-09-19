@@ -380,7 +380,7 @@ button.btn, a.btn {
   margin: 10px 0 40px;
 }
 
-#contact input {
+#contact input, #contact textarea {
   background: white;
   border: 0;
   box-sizing: border-box;
@@ -391,6 +391,11 @@ button.btn, a.btn {
   outline: none;
   padding: 0 20px;
   width: 100%;
+}
+
+#contact textarea {
+  height: 200px;
+  padding: 20px;
 }
 
 #contact input.divider {
